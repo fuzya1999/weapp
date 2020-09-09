@@ -1,0 +1,47 @@
+<!--pages/add/add.wxml-->
+<van-cell-group>
+  <van-field
+    value="{{ name }}"
+    required
+    clearable
+    label="员工姓名"
+    placeholder="请输入员工姓名"
+    bind:blur="onChangename"
+  />
+
+  <van-field
+    value="{{ password }}"
+    required
+    clearable
+    label="密码"
+    placeholder="请输入密码"
+    bind:blur="onChangepassword"
+  />
+
+  <van-field
+    value="{{ sno }}"
+    required
+    clearable
+    label="员工号"
+    placeholder="请输入员工号"
+    bind:blur="onChangesno"
+  />
+
+<view class="weui-uploader">
+  <view class="img-v weui-uploader__bd">
+    <view class='pic' wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
+        <image class='weui-uploader__img ' 
+                src="{{item}}" 
+                data-index="{{index}}" mode="aspectFill" bindtap="previewImg">
+                  <icon type='cancel' class="delete-btn" data-index="{{index}}" catchtap="deleteImg"></icon>
+        </image>
+    </view>
+     
+      <!-- 用来提示用户上传图片 -->
+      <view class="weui-uploader__input-box pic" bindtap="chooseImg"> </view>
+  </view>
+  <button class="upload-img-btn" bindtap="chooseImg" type='primary'>拍照  / 上传 员工照片</button>
+</view>
+</van-cell-group>
+<van-button type="primary" block bind:click="adduser">确认添加</van-button>
+<van-toast id="van-toast" />

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-card": "../../miniprogram_npm/@vant/weapp/card/index",
+    "van-notice-bar": "../../miniprogram_npm/@vant/weapp/notice-bar/index",
+    "van-field": "../../miniprogram_npm/@vant/weapp/field/index",
+    "van-submit-bar": "../../miniprogram_npm/@vant/weapp/submit-bar/index",
+    "van-stepper": "../../miniprogram_npm/@vant/weapp/stepper/index",
+    "van-toast": "../../miniprogram_npm/@vant/weapp/toast/index"
+  }
+}

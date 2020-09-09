@@ -1,0 +1,22 @@
+/* pages/income/income.wxss */
+.out {
+  margin-top: 300rox;
+  width: 100%;
+  height: 600rpx;
+  font-size: 50rpx;
+}
+.in {
+  margin: 65rpx auto;
+  width: 600rpx;
+  height: 70;
+  line-height: 70rpx;
+  border: 2rpx solid slategrey;
+  border-radius: 15rpx;
+}
+.china {
+  width: 400rpx;
+  margin: 50rpx auto;
+}
+.in text {
+  color: cornflowerblue;
+}

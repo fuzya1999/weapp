@@ -1,0 +1,18 @@
+<!--pages/program/program.wxml-->
+<van-search
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  use-action-slot
+  bind:change="onChange"
+  bind:search="onSearch"
+>
+</van-search>
+<van-card wx:for="{{productList}}" wx:key="index"  wx:if="{{item.product == value || value == ''}}" data-detailprduct="{{item}}"
+  tag="{{item.new}}"
+  price="{{item.money}}"
+  desc="{{item.describe}}"
+  title="{{item.product}}"
+  thumb="{{item.img}}"
+  bindtap="details"
+>
+</van-card>

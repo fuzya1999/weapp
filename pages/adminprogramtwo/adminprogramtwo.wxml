@@ -1,0 +1,20 @@
+<!--pages/adminprogramtwo/adminprogramtwo.wxml-->
+<van-cell
+  is-link
+  title="增加产品信息"
+  link-type="navigateTo"
+  url="../adminadd/adminadd"
+/>
+<van-cell
+  is-link
+  title="删除产品信息"
+  link-type="navigateTo"
+  url="../admindelete/admindelete"
+/>
+<van-cell
+  is-link
+  title="修改产品信息"
+  link-type="navigateTo"
+  url="../adminupdate/adminupdate"
+/>
+

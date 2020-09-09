@@ -1,0 +1,13 @@
+<!--pages/admindelete/admindelete.wxml-->
+<van-cell-group>
+  <van-field
+    value="{{ product }}"
+    required
+    clearable
+    label="产品名称"
+    placeholder="请输入产品名称"
+    bind:blur="onChangeproduct"
+  />
+</van-cell-group>
+<van-button type="primary" block bind:click="deleteuser">确认删除</van-button>
+<van-toast id="van-toast" />

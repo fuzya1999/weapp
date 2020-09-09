@@ -1,0 +1,13 @@
+<!--pages/adminprogramdetail/adminprogramdetail.wxml-->
+<van-card 
+  num="卖出个数：{{detailprduct.volume}}"
+  tag="{{detailprduct.new}}"
+  price="卖出金额：{{detailprduct.money * detailprduct.volume}}"
+  desc="{{detailprduct.describe}}"
+  title="{{detailprduct.product}}"
+  thumb="{{detailprduct.img}}"
+>
+</van-card>
+<van-cell-group wx:for="{{customersList}}" wx:key="index"  wx:if="{{item.productname == detailprduct.product}}" >
+  <van-cell title="{{item.productname}}" value="*{{item.volume}}" label="{{item.remarks}}" border="{{ false }}" />
+</van-cell-group>

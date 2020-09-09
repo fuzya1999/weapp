@@ -1,0 +1,88 @@
+<!--pages/details/details.wxml-->
+<van-notice-bar scrollable text="请仔细检查后提交，提交后不可修改、撤回！" />
+<van-card 
+  tag="{{detailprduct.new}}"
+  price="{{detailprduct.money}}"
+  desc="{{detailprduct.describe}}"
+  title="{{detailprduct.product}}"
+  thumb="{{detailprduct.img}}"
+>
+</van-card>
+
+<van-cell-group>
+<van-cell-group>
+  <van-field
+    value="{{admin}}"
+    label="员工"
+    left-icon="contact"
+    readonly
+    border="{{ false }}"
+  />
+</van-cell-group>
+
+  <van-field
+    value="{{ adminnumber }}"
+    label="员工号"
+    placeholder="请输入员工号"
+    error-message="{{ error }}"
+    border="{{ false }}"
+    bindinput="sno"
+  />
+</van-cell-group>
+
+<van-cell-group>
+  <van-field
+    value="{{ username }}"
+    required
+    clearable
+    label="顾客姓名"
+    placeholder="请输入顾客姓名"
+    bindinput="uname"
+
+  />
+
+  <van-field
+    value="{{ phone }}"
+    type="number"
+    label="顾客电话"
+    placeholder="请输入顾客电话"
+    required
+    border="{{ false }}"
+    bindinput="uphone"
+  />  
+  
+  <van-field
+    value="{{ ordernumber }}"
+    type="number"
+    label="订单号"
+    placeholder="请输入订单号"
+    required
+    border="{{ false }}"
+    bindinput="order"
+  />
+
+  <van-field
+    value="{{ remarks }}"
+    type="textarea "
+    label="备注"
+    placeholder="请输入备注"
+    required
+    border="{{ false }}"
+    bindinput="remark"
+  />  
+</van-cell-group>
+<van-toast id="van-toast" />
+<van-submit-bar
+  price="{{ price }}"
+  button-text="提交"
+  bind:submit="onSubmit"
+/>
+
+<view class="num">
+  <view class="buy">
+    <text>购买数量：</text>
+  </view>
+  <van-stepper value="{{ 1 }}" bind:change="onChange" />
+</view>
+<van-cell title="展示弹出层" is-link bind:click="showPopup" />
+

@@ -1,0 +1,31 @@
+{
+  "entryPagePath": "pages/index/index",
+  "pages": [
+    "pages/index/index",
+    "pages/program/program",
+    "pages/adminprogram/adminprogram",
+    "pages/mine/mine",
+    "pages/details/details",
+    "pages/staff/staff",
+    "pages/income/income",
+    "pages/userentry/entry",
+    "pages/administratorsentry/administratorsentry",
+    "pages/staffearn/staffearn",
+    "pages/staffearndetail/staffearndetail",
+    "pages/adminprogramdetail/adminprogramdetail",
+    "pages/add/add",
+    "pages/delete/delete",
+    "pages/update/update",
+    "pages/adminprogramtwo/adminprogramtwo",
+    "pages/adminadd/adminadd",
+    "pages/admindelete/admindelete",
+    "pages/adminupdate/adminupdate"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle":"black",
+    "navigationBarTitleText": "中国银行"
+  },
+  "sitemapLocation": "sitemap.json"
+}

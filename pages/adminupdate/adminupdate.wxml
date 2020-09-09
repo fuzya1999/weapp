@@ -1,0 +1,79 @@
+<!--pages/adminupdate/adminupdate.wxml-->
+<van-cell-group>
+  <van-field
+    value="{{ product }}"
+    required
+    clearable
+    label="产品名称"
+    placeholder="请输入产品名称"
+    bind:blur="onChangeproduct"
+  />
+
+  <van-field
+    value="{{ describe }}"
+    required
+    clearable
+    label="详情"
+    placeholder="请输入产品详情"
+    bind:blur="onChangedescribe"
+  />
+
+
+
+  <van-field
+    value="{{ money }}"
+    required
+    clearable
+    label="产品金额"
+    placeholder="请输入产品金额"
+    bind:blur="onChangemoney"
+  />
+
+  <van-field
+    value="{{ earn }}"
+    required
+    clearable
+    label="产品提成"
+    placeholder="请输入产品提成"
+    bind:blur="onChangeearn"
+  />
+
+  <van-field
+    value="{{ type }}"
+    required
+    clearable
+    label="产品类型"
+    placeholder="请输入产品类型"
+    bind:blur="onChangetype"
+  />
+
+  <van-field
+    value="{{ volume }}"
+    required
+    clearable
+    label="销售量"
+    placeholder="请输入产品销售量"
+    bind:blur="onChangeuservolume"
+  />
+
+
+<view class="weui-uploader">
+  <view class="img-v weui-uploader__bd">
+    <view class='pic' wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
+        <image class='weui-uploader__img ' 
+                src="{{item}}" 
+                data-index="{{index}}" mode="aspectFill" bindtap="previewImg">
+                  <icon type='cancel' class="delete-btn" data-index="{{index}}" catchtap="deleteImg"></icon>
+        </image>
+    </view>
+     
+      <!-- 用来提示用户上传图片 -->
+      <view class="weui-uploader__input-box pic" bindtap="chooseImg"> </view>
+  </view>
+  <button class="upload-img-btn" bindtap="chooseImg" type='primary'>拍照  / 上传 产品图片</button>
+</view>
+
+
+</van-cell-group>
+<van-button type="primary" block bind:click="adduser">确认修改</van-button>
+<van-toast id="van-toast" />

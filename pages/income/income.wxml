@@ -1,0 +1,7 @@
+<!--pages/income/income.wxml-->
+<cover-image src="../images/china.jpg" class="china"></cover-image>
+<view class="out">
+  <view class="in">总销售量:<text>{{number}}</text></view>
+  <view class="in">总销售额:<text>{{allmoney}}</text></view>
+  <view class="in">员工总利润:<text>{{earnmoney}}</text></view>
+</view>

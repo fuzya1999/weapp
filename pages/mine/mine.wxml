@@ -1,0 +1,12 @@
+<!--pages/mine/mine.wxml-->
+<van-card
+  num="销售数量：{{ usermessage.salesvolume }}"
+  price="销售金额{{ usermessage.sellout }}"
+  desc="{{ usermessage.sno }}"
+  title="{{ usermessage.name }}"
+  thumb="{{ usermessage.userimg }}"
+/>
+
+<van-cell-group wx:for="{{customersList}}" wx:key="index"  wx:if="{{item.name == usermessage.name}}" >
+  <van-cell title="{{item.productname}}" value="*{{item.volume}}" label="{{item.remarks}}" border="{{ false }}" />
+</van-cell-group>

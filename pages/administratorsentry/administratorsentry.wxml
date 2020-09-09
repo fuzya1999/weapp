@@ -1,0 +1,38 @@
+<!--pages/administratorsentry/administratorsentry.wxml-->
+<van-cell
+  is-link
+  title="全部产品"
+  link-type="navigateTo"
+  url="/pages/adminprogram/adminprogram"
+/>
+
+<van-cell
+  is-link
+  title="员工业绩"
+  link-type="navigateTo"
+  url="/pages/staffearn/staffearn"
+/>
+
+<van-cell
+  is-link
+  title="整体业绩"
+  link-type="navigateTo"
+  url="/pages/income/income"
+/>
+
+<van-cell
+  is-link
+  title="产品信息管理"
+  link-type="navigateTo"
+  url="/pages/adminprogramtwo/adminprogramtwo"
+/>
+
+<van-cell
+  is-link
+  title="员工信息管理"
+  link-type="navigateTo"
+  url="/pages/staff/staff"
+/>
+
+
+

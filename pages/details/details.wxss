@@ -1,0 +1,11 @@
+/* pages/details/details.wxss */
+
+.buy {
+  float: left;
+  padding-left: 30rpx;
+  padding-top: 10rpx;
+  width: 510rpx;
+}
+.custom-class {
+  float: right;
+}

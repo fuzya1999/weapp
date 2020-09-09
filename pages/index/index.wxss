@@ -1,0 +1,31 @@
+/**index.wxss**/
+.china {
+  width: 400rpx;
+  margin: 50rpx auto;
+}
+.login_form {
+  display: block;
+  margin-top: 100rpx;
+
+}
+.login_info{  
+  width: 700rpx;
+  height: 300rpx;
+  margin: auto;
+}  
+.weui-cell__bd {
+  border: 2rpx solid #808080;
+  border-radius: 10rpx;
+}
+.weui-cell {
+  margin: 80rpx;
+}
+
+.weui-btn-area {
+  width:550rpx;
+  margin: 20rpx auto;
+}
+.weui-input {
+  width: 550rpx;
+  height: 70rpx;
+}

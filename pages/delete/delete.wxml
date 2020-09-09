@@ -1,0 +1,13 @@
+<!--pages/delete/delete.wxml-->
+<van-cell-group>
+  <van-field
+    value="{{ sno }}"
+    required
+    clearable
+    label="员工号"
+    placeholder="请输入员工号"
+    bind:blur="onChangesno"
+  />
+</van-cell-group>
+<van-button type="primary" block bind:click="deleteuser">确认删除</van-button>
+<van-toast id="van-toast" />

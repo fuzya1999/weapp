@@ -1,0 +1,19 @@
+<!--pages/staffearndetail/staffearndetail.wxml-->
+<van-card
+  num="销售数量:{{ usermessage.salesvolume }}"
+  price="销售金额:{{ usermessage.sellout }}"
+  desc="{{ usermessage.sno }}"
+  title="{{ usermessage.name }}"
+  thumb="{{ usermessage.userimg }}"
+/>
+<van-cell-group>
+  <van-cell title="员工名:" value="{{ usermessage.name }}" />
+  <van-cell title="员工密码:" value="{{ usermessage.password }}" />
+  <van-cell title="员工号:" value="{{ usermessage.sno }}" />
+  <van-cell title="员工销售数量:" value="{{ usermessage.salesvolume }}" />
+  <van-cell title="员工销售金额:" value="{{ usermessage.sellout }}" />
+  <van-cell title="员工提成:" value="{{ usermessage.userearn }}" />
+</van-cell-group>
+<van-cell-group wx:for="{{customersList}}" wx:key="index"  wx:if="{{item.name == usermessage.name}}" >
+  <van-cell title="{{item.productname}}" value="*{{item.volume}}" label="{{item.remarks}}" border="{{ false }}" />
+</van-cell-group>

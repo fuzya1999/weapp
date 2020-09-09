@@ -1,0 +1,11 @@
+<!--pages/entry/entry.wxml-->
+<van-cell
+  is-link
+  title="全部产品"
+  bindtap="tochange"
+/>
+<van-cell
+  is-link
+  title="个人资料"
+  bindtap="tochangetwo"
+/>
